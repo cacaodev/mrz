@@ -11,7 +11,6 @@ const {
     bapConfigurationTemplate,
     issuingStateTemplate,
     documentNumberTemplate,
-    documentNumberCheckDigitTemplate,
     expirationDateTemplate,
     lastNameTemplate,
     compositeCheckDigitTemplate
@@ -42,18 +41,6 @@ module.exports = [
         start: 5,
         end: 14,
         parser: parseDocumentNumber
-    }),
-    Object.assign({}, documentNumberCheckDigitTemplate, {
-        line: 0,
-        start: 14,
-        end: 15,
-        related: [
-            {
-                line: 0,
-                start: 5,
-                end: 14
-            }
-        ]
     }),
     Object.assign({}, expirationDateTemplate, {
         line: 0,

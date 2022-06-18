@@ -1,10 +1,11 @@
 'use strict';
 
-const parseFrenchNationalId = require('./frenchNationalId');
-const parseSwissDrivingLicense = require('./swissDrivingLicense');
 const parseTD1 = require('./td1');
 const parseTD2 = require('./td2');
 const parseTD3 = require('./td3');
+const parseSwissDrivingLicense = require('./swissDrivingLicense');
+const parseFrenchNationalId = require('./frenchNationalId');
+const parseFrenchDrivingLicense = require('./frenchDrivingLicense');
 
 module.exports = {
   TD1: parseTD1,
@@ -12,4 +13,5 @@ module.exports = {
   TD3: parseTD3,
   SWISS_DRIVING_LICENSE: parseSwissDrivingLicense,
   FRENCH_NATIONAL_ID: parseFrenchNationalId,
+  FRENCH_DRIVING_LICENSE: parseFrenchDrivingLicense
 };
